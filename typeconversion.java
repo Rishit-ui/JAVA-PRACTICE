@@ -12,3 +12,5 @@ public class typeconversion {
 
     }
 }
+
+// explicit means larger value to smaller
