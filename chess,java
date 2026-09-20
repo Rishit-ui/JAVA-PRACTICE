@@ -1,0 +1,36 @@
+public class chess{
+    public static void main (String[] args) {
+        int[][] board = new int[8][8];
+
+        // Initialize the chessboard with pieces
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                if (i == 1) {
+                    board[i][j] = 1; // Pawns
+                } else if (i == 6) {
+                    board[i][j] = -1; // Opponent's pawns
+                } else if (i == 0 || i == 7) {
+                    if (j == 0 || j == 7) {
+                        board[i][j] = 2; // Rooks
+                    } else if (j == 1 || j == 6) {
+                        board[i][j] = 3; // Knights
+                    } else if (j == 2 || j == 5) {
+                        board[i][j] = 4; // Bishops
+                    } else if (j == 3) {
+                        board[i][j] = 5; // Queen
+                    } else if (j == 4) {
+                        board[i][j] = 6; // King
+                    }
+                }
+            }
+        }
+
+        // Print the chessboard
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                System.out.print(board[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
