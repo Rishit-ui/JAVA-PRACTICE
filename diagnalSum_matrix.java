@@ -9,7 +9,7 @@ public class diagnalSum_matrix {
         int sum = 0;
 
         for (int i = 0; i < matrix.length; i++) {
-            sum += matrix[i][i]; // Summing the diagonal elements
+            sum += matrix[i][i]; // summing the diagonal elements
         }
 
         System.out.println("The sum of the diagonal elements in the matrix is: " + sum);
