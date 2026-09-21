@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class operations {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner Sc = new Scanner(System.in);
 
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        int a = Sc.nextInt();
+        int b = Sc.nextInt();
 
         a = a + b;
         b = a - b;
